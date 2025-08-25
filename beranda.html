@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PelukPelu</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .navbar-custom {
+      background-color: #ffffff; 
+    }
+    .navbar-custom .nav-link {
+      color: rgb(0, 0, 0) !important;
+      font-weight: 500;
+    }
+    .navbar-custom .nav-link.active {
+      border-bottom: 3px solid #ffcc99; 
+    }
+    .navbar-custom .navbar-brand {
+      color: rgb(11, 10, 10);
+      font-weight: bold;
+    }
+    .navbar-custom .btn {
+      color: rgb(26, 25, 25);
+      border: none;
+    }
+    .navbar-custom .btn:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../GAMBAR/logo.png" alt="Logo" width="40" class="me-2">
+      PelukPelu
+    </a>
+
+    <!-- Toggle Button (mobile) -->
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+   <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Menu utama ke kanan -->
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="beranda.html">BERANDA</a></li>
+        <li class="nav-item"><a class="nav-link" href="katalog.html">KATALOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
+        <li class="nav-item"><a class="nav-link" href="produk.html">PRODUK KAMI</a></li>
+      </ul>
+
+      <!-- Login & Cart -->
+      <div class="d-flex ms-3">
+        <a href="#" class="btn">
+          <i class="bi bi-person fs-5"></i>
+        </a>
+        <a href="#" class="btn ms-2">
+          <i class="bi bi-cart fs-5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!--HERO SECTION-->
+<section class="hero text-center py-4">
+  <div class="container">
+    <img src="../GAMBAR/desain 1.png" class="img-fluid rounded shadow" alt="Hero Banner">
+  </div>
+</section>
+<section class="py-5">
+  <div class="container">
+    <div class="row text-center g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-1">
+          <div class="card-body">
+            <img src="../GAMBAR/gratis-ongkir.png" alt="Gratis Ongkir" class="mb-3" width="60">
+            <h5 class="card-title fw-bold">PENGIRIMAN GRATIS</h5>
+            <p class="card-text">Pengiriman Seluruh Indonesia</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-1">
+          <div class="card-body">
+            <img src="../GAMBAR/daun.png" alt="Bahan Aman" class="mb-3" width="60">
+            <h5 class="card-title fw-bold">BAHAN AMAN</h5>
+            <p class="card-text">Bahan Aman Untuk Anak-Anak</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-1">
+          <div class="card-body">
+            <img src="../GAMBAR/help.png" alt="Bantuan" class="mb-3" width="60">
+            <h5 class="card-title fw-bold">BANTUAN</h5>
+            <p class="card-text">Bantuan Untuk Anda</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Pilihan Kategori -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h4 class="fw-bold mb-4">PILIHAN KATEGORI</h4>
+    <div class="row g-4">
+
+      <!-- Gantungan Kunci -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/gantungan.png" alt="Gantungan Kunci" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">GANTUNGAN KUNCI</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kartun -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/kartun.png" alt="Kartun" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">KARTUN</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Anomali -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/anomali.png" alt="Anomali" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">ANOMALI</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hewan -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/hewan.png" alt="Hewan" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">HEWAN</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Buah dan Sayur -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/buah.png" alt="Buah dan Sayur" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">BUAH DAN SAYUR</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Guling -->
+      <div class="col-md-4">
+        <div class="card text-center shadow-sm border-0">
+          <div class="card-body">
+            <img src="../GAMBAR/guling.png" alt="Guling" class="img-fluid mb-2" style="height:100px; object-fit:contain;">
+            <h6 class="fw-bold">GULING</h6>
+            <a href="#" class="btn btn-warning btn-sm mt-2">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--HERO SECTION-->
+<section class="hero text-center py-4">
+  <div class="container">
+    <img src="../GAMBAR/desain 2.png" 
+         class="img-fluid rounded shadow" 
+         style="opacity: 0.6;" 
+         alt="Hero Banner">
+  </div>
+</section>
+
+<!-- FOOTER -->
+ <center>
+<footer class="text-dark py-5" style="background-color: #d9b899;">
+  <div class="container">
+    <div class="row">
+      <!-- Logo & Deskripsi -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">
+          <img src="../GAMBAR/logo.png" alt="PelukPelu" style="width:40px; height:40px; margin-right:10px;">
+        
+        </h5>
+        <p>
+          Temukan boneka lucu dan karakter favoritmu di sini.  
+          Pelukan yang hangat, dari kami untukmu!
+        </p>
+      </div>
+
+      <!-- Navigasi -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5 class="fw-bold">NAVIGASI</h5>
+        <ul class="list-unstyled">
+          <li><a href="beranda.html" class="text-dark text-decoration-none">BERANDA</a></li>
+          <li><a href="katalog.html" class="text-dark text-decoration-none">KATALOG</a></li>
+          <li><a href="layanan.html" class="text-dark text-decoration-none">LAYANAN</a></li>
+          <li><a href="produk.html" class="text-dark text-decoration-none">PRODUK KAMI</a></li>
+        </ul>
+      </div>
+
+      <!-- Ikuti Kami -->
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold">IKUTI KAMI</h5>
+        <p><i class="bi bi-tiktok"></i> @PelukPelu_1</p>
+        <p><i class="bi bi-instagram"></i> @PelukPelu_2</p>
+        <p><i class="bi bi-bag"></i> @PelukPelu_3</p>
+      </div>
+    </div>
+
+    
+  </div>
+ </footer>
+</center>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
