@@ -16,9 +16,6 @@
       color: rgb(0, 0, 0) !important;
       font-weight: 500;
     }
-    .navbar-custom .nav-link.active {
-      border-bottom: 3px solid #ffcc99; 
-    }
     .navbar-custom .navbar-brand {
       color: rgb(11, 10, 10);
       font-weight: bold;
@@ -29,6 +26,9 @@
     }
     .navbar-custom .btn:hover {
       background-color: rgba(255, 255, 255, 0.2);
+    }
+    .nav-link.active {
+      color: #a85d32 !important;
     }
 
     body {
@@ -42,6 +42,17 @@
     .emoji {
       font-size: 1.3rem;
     }
+     footer {
+      background-color: #DDC09E;
+    }
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer a:hover {
+      color: #a85d32 !important;
+      text-decoration: underline;
+    }
   
   </style>
 </head>
@@ -50,25 +61,20 @@
     <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="../KATALOG/GAMBAR/logo.png" alt="Logo" width="40" class="me-2">
+    <a class="navbar-brand d-flex align-items-center" href="beranda.html">
+      <img src="GAMBAR/logo.png" alt="Logo" width="40" class="me-2">
       PelukPelu
     </a>
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Menu -->
-   <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Menu utama ke kanan -->
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="beranda.html">BERANDA</a></li>
+        <li class="nav-item"><a class="nav-link" href="beranda.html">BERANDA</a></li>
         <li class="nav-item"><a class="nav-link" href="katalog.html">KATALOG</a></li>
         <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
-        <li class="nav-item"><a class="nav-link" href="produk.html ">PRODUK KAMI</a></li>
+        <li class="nav-item"><a class="nav-link" href="produk.html">PRODUK KAMI</a></li>
       </ul>
-
-      <!-- Login & Cart -->
       <div class="d-flex ms-3">
         <a href="login.html" class="btn">
           <i class="bi bi-person fs-5"></i>
@@ -79,7 +85,25 @@
       </div>
     </div>
   </div>
- </nav>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero text-center py-4">
+  <div class="container">
+    <img src="GAMBAR/hero section canva.jpg" class="img-fluid rounded shadow" alt="Hero Banner">
+  </div>
+</section>
+
+<!-- Ucapan Hallo -->
+    <div class="container my-4">
+      <div class="d-flex align-items-center">
+        <img src="../KATALOG/GAMBAR/layanan2.jpg" alt="Bear Logo" width="50" class="me-2">
+        <h5 class="mb-0 text-brown">HALLO SAHABAT PELUKPELU</h5>
+      </div>
+      <hr class="mt-2" style="border: 2px solid brown; border-radius: 5px;">
+    </div>
+
+
  <div class="container py-5">
     <div class="custom-card shadow">
       <div class="row align-items-center">
@@ -87,17 +111,20 @@
         <!-- Teks -->
         <div class="col-md-9">
           <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Gantungan Kunci
+            <span class="emoji"></span> 1. Ragam Boneka
           </h5>
           <p>
-            Buat Anda yang sedang mencari gantungan kunci yang lucu dan gemoy untuk event-event tertentu atau koleksi pribadi, 
+            Buat Anda yang sedang mencari boneka yang lucu dan gemoy untuk event-event tertentu atau koleksi pribadi, 
             kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
           </p>
           <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
           <ul class="mb-2">
-            <li>✨ gantungan mobil</li>
-            <li>✨ gantungan tas</li>
-            <li>✨ gantungan kunci motor</li>
+            <li>✨ gantungan kunci</li>
+            <li>✨ boneka kartun</li>
+            <li>✨ boenka Anomali</li>
+            <li>✨ boenka hewan</li>
+            <li>✨ boenka buah dan sayur</li>
+            <li>✨ guling gemoy</li>
           </ul>
           <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
         </div>
@@ -110,84 +137,7 @@
       </div>
     </div>
   </div>
-  <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
-
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
-
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <!--YANG KEDUA-->
+  
    <div class="container py-5">
     <div class="custom-card shadow">
       <div class="row align-items-center">
@@ -195,267 +145,101 @@
         <!-- Teks -->
         <div class="col-md-9">
           <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
+            <span class="emoji"></span> 2.Bantuan
           </h5>
           <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
+            Buat Anda yang  masih bingung untuk memilih boneka kami menyediakan orang untuk membantu anda. 
           </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
+          
           <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
         </div>
 
         <!-- Gambar -->
         <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
+          <img src="../KATALOG/GAMBAR/home ganci.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
         </div>
 
       </div>
     </div>
   </div>
-  <div class="container py-5">
+
+
+ <div class="container py-5">
     <div class="custom-card shadow">
       <div class="row align-items-center">
         
         <!-- Teks -->
         <div class="col-md-9">
           <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
+            <span class="emoji">🎁</span> 3.Pengiriman Gratis Ongkir
           </h5>
           <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
+            Butuh teman tidur yang empuk, lucu, dan gemoy? Boneka guling kami hadir dengan desain eksklusif, bahan super lembut, dan kualitas premium—siap jadi peluk paling nyaman untuk menemani istirahatmu setiap hari! 
+            Dan kabar baiknya, setiap pembelian sekarang GRATIS ONGKIR loh
           </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
+          
           </ul>
           <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
         </div>
 
         <!-- Gambar -->
         <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
+          <img src="../KATALOG/GAMBAR/home ganci.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
         </div>
 
       </div>
     </div>
   </div>
-  <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
 
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-   <!--YANG KE TIGA-->
-    <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
-
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
-
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-  <div class="container py-5">
-    <div class="custom-card shadow">
-      <div class="row align-items-center">
-        
-        <!-- Teks -->
-        <div class="col-md-9">
-          <h5 class="fw-bold">
-            <span class="emoji">🎁</span> 1. Boneka gantungan kunci
-          </h5>
-          <p>
-            Buat Anda yang sedang mencari boneka souvenir untuk event-event tertentu, 
-            kami menyediakan berbagai pilihan boneka dengan desain eksklusif dan kualitas terbaik.
-          </p>
-          <p class="mb-1">Pilih berbagai model dan ukuran sesuai kebutuhan Anda:</p>
-          <ul class="mb-2">
-            <li>✨ Classic Bear</li>
-            <li>✨ Wisuda / Graduation Series</li>
-            <li>✨ Pilihan Ukuran:
-              <ul>
-                <li>Kecil</li>
-                <li>Sedang</li>
-                <li>Besar</li>
-              </ul>
-            </li>
-            <li>✨ Bulu pendek hingga bulu panjang</li>
-            <li>📍 Posisi duduk atau berdiri</li>
-          </ul>
-          <p class="fw-semibold">📌 Koleksi lengkap tersedia di: <span class="text-danger">PelukPelu</span></p>
-        </div>
-
-        <!-- Gambar -->
-        <div class="col-md-3 text-center">
-          <img src="https://i.ibb.co/1zf5bSf/bear.png" alt="Boneka Bear" class="img-fluid rounded-circle" style="max-width: 150px;">
-        </div>
-
-      </div>
-    </div>
-  </div>
-  
  <!-- FOOTER -->
-<footer class="text-dark py-5" style="background-color: #d9b899;">
+<footer class="text-dark pt-4 mt-5">
   <div class="container">
-    <div class="row">
-      <!-- Logo & Deskripsi -->
+    <div class="row text-center text-md-start">
       <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">
-          <img src="../GAMBAR/logo.png" alt="PelukPelu" style="width:40px; height:40px; margin-right:10px;">
-        
+        <h5 class="fw-bold d-flex align-items-center text-black">
+          <img src="GAMBAR/logo.png" alt="Logo" width="30" class="me-2">
+          PelukPelu
         </h5>
-        <p>
-          Temukan boneka lucu dan karakter favoritmu di sini.  
-          Pelukan yang hangat, dari kami untukmu!
-        </p>
+        <p class="small text-black">Temukan boneka lucu dan karakter favoritmu di sini.<br>
+        Pelukan yang hangat, dari kami untukmu!</p>
       </div>
-
-      <!-- Navigasi -->
-      <div class="col-md-4 mb-4 text-center">
-        <h5 class="fw-bold">NAVIGASI</h5>
+      <div class="col-md-4 mb-4">
+        <h6 class="fw-bold">NAVIGASI</h6>
         <ul class="list-unstyled">
-          <li><a href="beranda.html" class="text-dark text-decoration-none">KATALOG</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">LAYANAN</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">PRODUK KAMI</a></li>
+          <li><a href="beranda.html">BERANDA</a></li>
+          <li><a href="katalog.html">KATALOG</a></li>
+          <li><a href="layanan.html">LAYANAN</a></li>
+          <li><a href="produk.html">PRODUK KAMI</a></li>
         </ul>
       </div>
-
-      <!-- Ikuti Kami -->
       <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">IKUTI KAMI</h5>
-        <p><i class="bi bi-tiktok"></i> @PelukPelu_1</p>
-        <p><i class="bi bi-instagram"></i> @PelukPelu_2</p>
-        <p><i class="bi bi-bag"></i> @PelukPelu_3</p>
+        <h6 class="fw-bold">IKUTI KAMI</h6>
+        <p class="mb-1"><i class="bi bi-tiktok me-2"></i>@PelukPelu_1</p>
+        <p class="mb-1"><i class="bi bi-instagram me-2"></i>@PelukPelu_2</p>
+        <p class="mb-0"><i class="bi bi-shop me-2"></i>@PelukPelu_3</p>
       </div>
     </div>
-
-    
   </div>
+
+  <hr class="border-secondary mt-4 mb-3">
+            <div class="text-center">
+                <p class="text-gray-400 small mb-0">&copy; 2025 PelukPelu.</p>
+            </div>
 </footer>
 
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- Script untuk aktifkan navbar sesuai halaman -->
+<script>
+  const currentLocation = location.pathname.split("/").pop();
+  const menuItems = document.querySelectorAll(".nav-link");
+
+  menuItems.forEach(item => {
+    if (item.getAttribute("href") === currentLocation || 
+        (currentLocation === "" && item.getAttribute("href") === "beranda.html")) {
+      item.classList.add("active");
+    }
+  });
+</script>
 </body>

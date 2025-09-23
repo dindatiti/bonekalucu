@@ -12,12 +12,10 @@
     .navbar-custom {
       background-color: #ffffff; 
     }
-    .navbar-custom .nav-link {
+    
+    .navbar-custom , .nav-link {
       color: rgb(0, 0, 0) !important;
       font-weight: 500;
-    }
-    .navbar-custom .nav-link.active {
-      border-bottom: 3px solid #ffcc99; 
     }
     .navbar-custom .navbar-brand {
       color: rgb(11, 10, 10);
@@ -30,34 +28,58 @@
     .navbar-custom .btn:hover {
       background-color: rgba(255, 255, 255, 0.2);
     }
+    .nav-link.active {
+      color: #a85d32 !important;
+    }
+    footer {
+      background-color: #DDC09E;
+    }
+    footer a {
+      text-decoration: none;
+      color: inherit;
+    }
+    footer a:hover {
+      color: #a85d32 !important;
+      text-decoration: underline;
+    }
+    body {
+      background: rgb(253, 252, 251);
+  
+    }
+    .card img {
+      height: 220px;
+      object-fit: cover;
+    }
+    .btn-buy {
+      background-color: #DDC09E;
+      border: none;
+      font-weight: 500;
+    }
+    .btn-buy:hover {
+      background-color: #c89d6e;
+      color: white;
+    }
   </style>
 </head>
 <body>
+
   <!-- Navbar -->
- <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-custom shadow-sm">
   <div class="container">
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="../KATALOG/GAMBAR/logo.png" alt="Logo" width="40" class="me-2">
+    <a class="navbar-brand d-flex align-items-center" href="beranda.html">
+      <img src="GAMBAR/logo.png" alt="Logo" width="40" class="me-2">
       PelukPelu
     </a>
-
-    <!-- Toggle Button (mobile) -->
     <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
-
-    <!-- Menu -->
-   <div class="collapse navbar-collapse" id="navbarNav">
-      <!-- Menu utama ke kanan -->
+    <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="beranda.html">BERANDA</a></li>
+        <li class="nav-item"><a class="nav-link" href="beranda.html">BERANDA</a></li>
         <li class="nav-item"><a class="nav-link" href="katalog.html">KATALOG</a></li>
         <li class="nav-item"><a class="nav-link" href="layanan.html">LAYANAN</a></li>
         <li class="nav-item"><a class="nav-link" href="produk.html">PRODUK KAMI</a></li>
       </ul>
-
-      <!-- Login & Cart -->
       <div class="d-flex ms-3">
         <a href="login.html" class="btn">
           <i class="bi bi-person fs-5"></i>
@@ -68,254 +90,429 @@
       </div>
     </div>
   </div>
- </nav>
+</nav>
 
- <body style="background: url('https://i.ibb.co/0YwKkdp/grid.png');">
-   <!--HERO SECTION-->
- <section class="hero text-center py-4">
-  <div class="container">
-    <img src="../KATALOG/GAMBAR/desain 1.png" class="img-fluid rounded shadow" alt="Hero Banner">
-  </div>
- </section>
- <section class="py-5">
-  <div class="container">
-    <div class="row text-center g-4">
+  <!--HERO SECTION-->
+  <section class="hero text-center py-4">
+    <div class="container">
+      <img src="../KATALOG/GAMBAR/desain 1.png" class="img-fluid rounded shadow" alt="Hero Banner">
+    </div>
+  </section>
 
+  <div class="container py-5">
     <div class="row g-4">
-      <!-- Produk 1 -->
-      <div class="col-md-3 col-6">
+
+      <!-- produk -->
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="../KATALOG/GAMBAR/boneka1.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <a href="detail1.html" class="text-decoration-none text-dark">
+          <img src="GAMBAR/boneka1.jpg" class="card-img-top" alt="Boneka Dino Kuning">
           <div class="card-body">
             <h6 class="card-title">Boneka Dino Kuning</h6>
             <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-warning w-100">BELI</button>
+            <button class="btn btn-buy w-100">BELI</button>
+          </a>
           </div>
         </div>
       </div>
 
-      <!-- Produk 2 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="../KATALOG/GAMBAR/boneka2.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <a href="detail1.html" class="text-decoration-none text-dark">
+          <img src="GAMBAR/boneka2.jpg" class="card-img-top" alt="Tung Tung Sahur">
           <div class="card-body">
             <h6 class="card-title">Tung Tung Sahur</h6>
             <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <button class="btn btn-buy w-100">BELI</button>
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- Produk 3 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/Yy41v3t/boneka-cewek.jpg" class="card-img-top" alt="Boneka Imut">
+          <img src="GAMBAR/boneka3.jpg" class="card-img-top" alt="Boneka Imut">
           <div class="card-body">
-            <h6 class="card-title">Tung Tung Sahur</h6>
-            <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 4 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/RbC7hyk/boneka-pink.jpg" class="card-img-top" alt="Boneka">
+          <img src="GAMBAR/boneka4.jpg" class="card-img-top" alt="Boneka Pink">
           <div class="card-body">
-            <h6 class="card-title">Tung Tung Sahur</h6>
-            <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 5 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/fM7n9pY/boneka-ungu.jpg" class="card-img-top" alt="Boneka Dino">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 6 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/FKTPD0k/boneka-kucing.jpg" class="card-img-top" alt="Boneka Kucing">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 7 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/Y7Z7gh6/boneka-pink2.jpg" class="card-img-top" alt="Boneka">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 8 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/nkL3gct/boneka-biru.jpg" class="card-img-top" alt="Boneka">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
+<div class="container py-3">
     <div class="row g-4">
-      <!-- Produk 1 -->
-      <div class="col-md-3 col-6">
+
+     
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/8D8ndTf/dino-kuning.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <img src="GAMBAR/boneka5.jpg" class="card-img-top" alt="Boneka Dino Kuning">
           <div class="card-body">
             <h6 class="card-title">Boneka Dino Kuning</h6>
             <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-warning w-100">BELI</button>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 2 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/Jr9K25t/tung-tung.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <img src="GAMBAR/boneka6.jpg" class="card-img-top" alt="Tung Tung Sahur">
           <div class="card-body">
             <h6 class="card-title">Tung Tung Sahur</h6>
             <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 3 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/Yy41v3t/boneka-cewek.jpg" class="card-img-top" alt="Boneka Imut">
+          <img src="GAMBAR/boneka7.jpg" class="card-img-top" alt="Boneka Imut">
           <div class="card-body">
-            <h6 class="card-title">Tung Tung Sahur</h6>
-            <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 4 -->
-      <div class="col-md-3 col-6">
+      
+      <div class="col-lg-3 col-md-4 col-6">
         <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/RbC7hyk/boneka-pink.jpg" class="card-img-top" alt="Boneka">
+          <img src="GAMBAR/boneka8.jpg" class="card-img-top" alt="Boneka Pink">
           <div class="card-body">
-            <h6 class="card-title">Tung Tung Sahur</h6>
-            <p class="text-muted mb-2">Rp.18.000</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
           </div>
         </div>
       </div>
 
-      <!-- Produk 5 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/fM7n9pY/boneka-ungu.jpg" class="card-img-top" alt="Boneka Dino">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 6 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/FKTPD0k/boneka-kucing.jpg" class="card-img-top" alt="Boneka Kucing">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 7 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/Y7Z7gh6/boneka-pink2.jpg" class="card-img-top" alt="Boneka">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Produk 8 -->
-      <div class="col-md-3 col-6">
-        <div class="card shadow-sm h-100 text-center">
-          <img src="https://i.ibb.co/nkL3gct/boneka-biru.jpg" class="card-img-top" alt="Boneka">
-          <div class="card-body">
-            <h6 class="card-title">Boneka Dino Kuning</h6>
-            <p class="text-muted mb-2">Rp.37.059</p>
-            <button class="btn btn-outline-dark w-100">BELI</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
+  <div class="container py-3">
+    <div class="row g-4">
 
- <!-- FOOTER -->
- <footer class="text-dark py-5" style="background-color: #d9b899;">
-  <div class="container">
-    <div class="row">
-      <!-- Logo & Deskripsi -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">
-          <img src="../GAMBAR/logo.png" alt="PelukPelu" style="width:40px; height:40px; margin-right:10px;">
-        
-        </h5>
-        <p>
-          Temukan boneka lucu dan karakter favoritmu di sini.  
-          Pelukan yang hangat, dari kami untukmu!
-        </p>
+     
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka 9.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Dino Kuning</h6>
+            <p class="text-muted mb-2">Rp.37.059</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Navigasi -->
-      <div class="col-md-4 mb-4 text-center">
-        <h5 class="fw-bold">NAVIGASI</h5>
-        <ul class="list-unstyled">
-          <li><a href="beranda.html" class="text-dark text-decoration-none">KATALOG</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">LAYANAN</a></li>
-          <li><a href="#" class="text-dark text-decoration-none">PRODUK KAMI</a></li>
-        </ul>
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka10.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <div class="card-body">
+            <h6 class="card-title">Tung Tung Sahur</h6>
+            <p class="text-muted mb-2">Rp.18.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
       </div>
 
-      <!-- Ikuti Kami -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">IKUTI KAMI</h5>
-        <p><i class="bi bi-tiktok"></i> @PelukPelu_1</p>
-        <p><i class="bi bi-instagram"></i> @PelukPelu_2</p>
-        <p><i class="bi bi-bag"></i> @PelukPelu_3</p>
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka11.jpg" class="card-img-top" alt="Boneka Imut">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka12.jpg" class="card-img-top" alt="Boneka Pink">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container py-3">
+    <div class="row g-4">
+
+     
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka13.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Dino Kuning</h6>
+            <p class="text-muted mb-2">Rp.37.059</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka14.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <div class="card-body">
+            <h6 class="card-title">Tung Tung Sahur</h6>
+            <p class="text-muted mb-2">Rp.18.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka15.jpg" class="card-img-top" alt="Boneka Imut">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka16.jpg" class="card-img-top" alt="Boneka Pink">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container py-3">
+    <div class="row g-4">
+
+     
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/guling 1.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Dino Kuning</h6>
+            <p class="text-muted mb-2">Rp.37.059</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/guling2.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <div class="card-body">
+            <h6 class="card-title">Tung Tung Sahur</h6>
+            <p class="text-muted mb-2">Rp.18.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/guling3.jpg" class="card-img-top" alt="Boneka Imut">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/guling4.jpg" class="card-img-top" alt="Boneka Pink">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container py-3">
+    <div class="row g-4">
+
+     
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/kartun2.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Dino Kuning</h6>
+            <p class="text-muted mb-2">Rp.37.059</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/kartun4.jpg" class="card-img-top" alt="Tung Tung Sahur">
+          <div class="card-body">
+            <h6 class="card-title">Tung Tung Sahur</h6>
+            <p class="text-muted mb-2">Rp.18.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/kartun5.jpg" class="card-img-top" alt="Boneka Imut">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/hewan1.jpg" class="card-img-top" alt="Boneka Pink">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container py-3">
+    <div class="row g-4">
+
+     
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/buah&sayur1.jpg" class="card-img-top" alt="Boneka Dino Kuning">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Dino Kuning</h6>
+            <p class="text-muted mb-2">Rp.37.059</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/home" class="card-img-top" alt="Tung Tung Sahur">
+          <div class="card-body">
+            <h6 class="card-title">Tung Tung Sahur</h6>
+            <p class="text-muted mb-2">Rp.18.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka15.jpg" class="card-img-top" alt="Boneka Imut">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Imut</h6>
+            <p class="text-muted mb-2">Rp.25.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-lg-3 col-md-4 col-6">
+        <div class="card shadow-sm h-100 text-center">
+          <img src="GAMBAR/boneka16.jpg" class="card-img-top" alt="Boneka Pink">
+          <div class="card-body">
+            <h6 class="card-title">Boneka Pink</h6>
+            <p class="text-muted mb-2">Rp.30.000</p>
+            <button class="btn btn-buy w-100">BELI</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-dark pt-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 mb-4">
+          <h5 class="fw-bold d-flex align-items-center text-black">
+            <img src="GAMBAR/logo.png" alt="Logo" width="30" class="me-2">
+            PelukPelu
+          </h5>
+          <p class="small text-black">Temukan boneka lucu dan karakter favoritmu di sini.<br>
+          Pelukan yang hangat, dari kami untukmu!</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold">NAVIGASI</h6>
+          <ul class="list-unstyled">
+            <li><a href="beranda.html">BERANDA</a></li>
+            <li><a href="katalog.html">KATALOG</a></li>
+            <li><a href="layanan.html">LAYANAN</a></li>
+            <li><a href="produk.html">PRODUK KAMI</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h6 class="fw-bold">IKUTI KAMI</h6>
+          <p class="mb-1"><i class="bi bi-tiktok me-2"></i>@PelukPelu_1</p>
+          <p class="mb-1"><i class="bi bi-instagram me-2"></i>@PelukPelu_2</p>
+          <p class="mb-0"><i class="bi bi-shop me-2"></i>@PelukPelu_3</p>
+        </div>
       </div>
     </div>
 
-    
-  </div>
- </footer>
+    <hr class="border-secondary mt-4 mb-3">
+    <div class="text-center">
+      <p class="text-gray-400 small mb-0">&copy; 2025 PelukPelu.</p>
+    </div>
+  </footer>
+
+  
 </body>
+</html>
