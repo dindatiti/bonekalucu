@@ -6,8 +6,7 @@ class Database {
         $this->connection = null;
         
         try {
-            // JANGAN ADA "new Database()" DI SINI!
-            // Hanya buat koneksi mysqli
+            
             $this->connection = new mysqli("localhost", "root", '', "db_katalog boneka");
 
             if ($this->connection->connect_error) {

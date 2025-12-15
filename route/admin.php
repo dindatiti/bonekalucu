@@ -13,7 +13,7 @@ $action = $_GET['action'] ?? 'index';
 
 $kategoriController = new KategoriController();
 
-switch ($page) { // PERBAIKI: ganti 'sswitch' menjadi 'switch'
+switch ($page) {
     case 'dashboard':
         include __DIR__ . '/../page/admin/isi.php';
         break;
